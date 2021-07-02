@@ -1,0 +1,44 @@
+object FormApp: TFormApp
+  Left = 336
+  Height = 228
+  Top = 161
+  Width = 313
+  Caption = 'To Do'
+  ClientHeight = 228
+  ClientWidth = 313
+  LCLVersion = '2.0.10.0'
+  object ListTask: TListBox
+    Left = 48
+    Height = 80
+    Top = 82
+    Width = 224
+    ItemHeight = 0
+    TabOrder = 0
+  end
+  object EditTask: TEdit
+    Left = 48
+    Height = 23
+    Top = 42
+    Width = 128
+    OnKeyPress = EditTaskKeyPress
+    TabOrder = 1
+  end
+  object btnAdd: TButton
+    Left = 184
+    Height = 25
+    Top = 42
+    Width = 43
+    Caption = '+'
+    OnClick = btnAddClick
+    TabOrder = 2
+  end
+  object btnDelete: TButton
+    Left = 232
+    Height = 25
+    Top = 42
+    Width = 40
+    Caption = '-'
+    OnClick = btnDeleteClick
+    TabOrder = 3
+  end
+end
